@@ -3,9 +3,12 @@ let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
+let para=document.querySelector('#para');
 
 let turnO = true; //playerX, playerO
 let count = 0; //To Track Draw
+
+para.textContent=`Current Player: ${turnO?'O':'X'}`
 
 const winPatterns = [
   [0, 1, 2],
@@ -38,6 +41,7 @@ boxes.forEach((box) => {
     }
     box.disabled = true;
     count++;
+    para.textContent=`Current Player: ${turnO?'O':'X'}`
 
     let isWinner = checkWinner();
 

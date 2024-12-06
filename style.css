@@ -13,6 +13,12 @@ h1 {
     margin-top: 30px;
 }
 
+#para{
+    font-size: 30px;
+    margin-top: 15px;
+    color: #474057;
+}
+
 .container {
     height: 70vh;
     display: flex;
